@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/number_input_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="A"
+        android:inputType="number"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/number_input_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="B"
+        android:inputType="number"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/number_input_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="C"
+        android:inputType="number"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        android:layout_weight="1"
+        android:onClick="calculateX"/>
+
+    <TextView
+    android:id="@+id/x_display_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="X ="
+    android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/x_display_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X ="
+        android:layout_weight="1"/>
+
+</LinearLayout>
