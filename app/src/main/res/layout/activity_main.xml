@@ -89,7 +89,8 @@
         android:onClick="calculateX"
         android:outlineAmbientShadowColor="#311B92"
         android:textSize="35dp"
-        android:text="CALCULATE" />
+        android:text="CALCULATE"
+        android:layout_margin="24dp"/>
 
     <TextView
         android:id="@+id/x_display_1"
@@ -97,7 +98,8 @@
         android:layout_height="wrap_content"
         android:text="X ="
         android:textSize="20dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
 
     <TextView
         android:id="@+id/x_display_2"
