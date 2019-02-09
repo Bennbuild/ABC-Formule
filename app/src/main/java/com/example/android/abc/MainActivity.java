@@ -51,12 +51,12 @@ public class MainActivity extends AppCompatActivity {
     private void displayNumber1(double number) {
         TextView answerView = findViewById(R.id.x_display_1);
         String numberString = String.valueOf(number);
-        answerView.setText(numberString);
+        answerView.setText("X = " + numberString);
     }
 
     private void displayNumber2(double number) {
         TextView answerView = findViewById(R.id.x_display_2);
         String numberString = String.valueOf(number);
-        answerView.setText(numberString);
+        answerView.setText("X = " + numberString);
     }
 }

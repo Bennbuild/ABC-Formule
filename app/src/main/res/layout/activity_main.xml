@@ -4,52 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="#E3F2FD">
 
-    <EditText
-        android:id="@+id/number_input_a"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints="A"
-        android:inputType="number"
-        android:layout_weight="1"/>
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/number_input_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints="B"
-        android:inputType="number"
-        android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#82B1FF"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="A"
+            android:textSize="20dp"/>
 
-    <EditText
-        android:id="@+id/number_input_c"
-        android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#82B1FF"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:textSize="20dp"
+            android:text="B" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#82B1FF"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:textSize="20dp"
+            android:text="C" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints="C"
-        android:inputType="number"
-        android:layout_weight="1"/>
+        android:orientation="horizontal"
+        android:padding="32dp">
+
+        <EditText
+            android:id="@+id/number_input_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="A"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/number_input_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="B"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/number_input_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="C"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CALCULATE"
-        android:layout_weight="1"
-        android:onClick="calculateX"/>
+        android:layout_gravity="center"
+        android:background="#7C4DFF"
+        android:onClick="calculateX"
+        android:outlineAmbientShadowColor="#311B92"
+        android:textSize="35dp"
+        android:text="CALCULATE" />
 
     <TextView
-    android:id="@+id/x_display_1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="X ="
-    android:layout_weight="1"/>
+        android:id="@+id/x_display_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X ="
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/x_display_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="X ="
-        android:layout_weight="1"/>
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>
