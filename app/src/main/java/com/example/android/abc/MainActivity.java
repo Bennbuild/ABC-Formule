@@ -27,24 +27,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private int aValue() {
+    private double aValue() {
         EditText aEditText = findViewById(R.id.number_input_a);
         String aText = aEditText.getText().toString();
-        int aNumber = Integer.parseInt(aText);
+        double aNumber = Double.parseDouble(aText);
         return aNumber;
     }
 
-    private int bValue() {
+    private double bValue() {
         EditText bEditText = findViewById(R.id.number_input_b);
         String bText = bEditText.getText().toString();
-        int bNumber = Integer.parseInt(bText);
+        double bNumber = Double.parseDouble(bText);
         return bNumber;
     }
 
-    private int cValue() {
+    private double cValue() {
         EditText cEditText = findViewById(R.id.number_input_c);
         String cText = cEditText.getText().toString();
-        int cNumber = Integer.parseInt(cText);
+        double cNumber = Double.parseDouble(cText);
         return cNumber;
     }
 
